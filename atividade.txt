@@ -1,0 +1,72 @@
+##########################################################
+Entidades de Domínio
+
+Produto
+
+Atributos:
+ID único
+Nome
+Tamanho
+Cor
+Quantidade em estoque
+Quantidade mínima em estoque
+Histórico de movimentação (entradas/saídas)
+Histórico de vendas
+Estoque
+
+Atributos:
+Produtos (relação com a entidade Produto)
+Quantidade total de cada produto
+Limite mínimo de estoque
+Alerta
+
+Atributos:
+Produto associado
+Tipo de alerta (baixa quantidade, reabastecimento necessário)
+Métodos de notificação (e-mail, notificação interna)
+Histórico de Vendas
+
+Atributos:
+Produto associado
+Quantidade vendida
+Período de venda
+Lucro gerado
+Ordem de Compra
+
+Atributos:
+Produtos (relação com a entidade Produto)
+Quantidade necessária
+Status da ordem (pendente, concluída, em andamento)
+Prazo de entrega
+Fornecedor
+
+Atributos:
+Nome do fornecedor
+Produtos fornecidos
+Prazo de entrega
+
+###################################################
+
+Casos de Uso
+Rastrear Produto
+
+Atribuir e gerenciar IDs únicos para cada produto.
+Adicionar e editar informações detalhadas (tamanho, cor, etc.).
+Gerenciar Estoque
+
+Definir e ajustar quantidades mínimas de estoque para cada produto.
+Atualizar automaticamente as quantidades em estoque com base em vendas ou movimentações internas.
+Receber Alertas de Estoque Baixo
+
+Configurar e receber notificações por e-mail e no sistema quando o estoque de um produto estiver abaixo do limite definido.
+Visualizar Histórico de Vendas e Estoque
+
+Exibir dados de vendas por período, lucros por produto, e produtos mais vendidos.
+Analisar tendências de estoque ao longo do tempo.
+Gerenciar Ordens de Compra
+
+Criar ordens de compra automaticamente com base em estoques mínimos e tendências de vendas.
+Integrar com fornecedores para atualizações automáticas sobre prazos de entrega.
+Integrar com Fornecedores
+
+Sincronizar o sistema com os fornecedores para gerenciar prazos de entrega e disponibilidade de produtos.
